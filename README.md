@@ -1,6 +1,6 @@
-# Node-Gittip
+# Node-Gittip -- A Node.js library for Gittip's REST API
 
-A Node.js library for Gittip's REST API
+[![NPM](https://nodei.co/npm/node-gittip.png)](https://nodei.co/npm/node-gittip/)
 
 ## Installation
 
@@ -33,7 +33,7 @@ Demos of the gittip module are located in: [./examples](https://github.com/Kevin
 
 ## Usage
 
-**.getPaydays(callback)**
+* **.getPaydays(callback)**
 
 ```javascript
 g.getPaydays(function(data) {
@@ -41,7 +41,7 @@ g.getPaydays(function(data) {
 });
 ```
 
-**.getStats(callback)**
+* **.getStats(callback)**
 
 ```javascript
 g.getStats(function(data) {
@@ -49,10 +49,10 @@ g.getStats(function(data) {
 });
 ```
 
-**.getUser(options, callback)**
+* **.getUser(options, callback)**
 
 ```javascript
-g.getUser({ name: 'kevintcoughlin' }, function(data) {
+g.getUser({ name: 'KevinTCoughlin' }, function(data) {
   console.log(data);
 });
 ```
@@ -61,11 +61,11 @@ g.getUser({ name: 'kevintcoughlin' }, function(data) {
 
 Issue the following Make command in the top directory to run the mocha.js test cases:
 
-    $ make test
+  $ make test
 
 Or...
 
-    $ npm test
+  $ npm test
 
 ## Contributing
 

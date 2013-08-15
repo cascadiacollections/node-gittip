@@ -1,0 +1,39 @@
+{
+  "name": "gittip",
+  "description": "Gittip API Client Library for Node.js",
+  "homepage": "https://github.com/KevinTCoughlin/node-gittip",
+  "keywords": [
+    "gittip",
+    "git",
+    "tip",
+    "crown funding",
+    "open source",
+    "oss"
+  ],
+  "version": "0.0.9",
+  "author": "Kevin Coughlin <kevintcoughlin@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:KevinTCoughlin/node-gittip.git"
+  },
+  "bugs": "https://github.com/KevinTCoughlin/node-gittip/issues",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "request": "*"
+  },
+  "devDependencies": {
+    "supertest": "*",
+    "mocha": ">= 1.11.0",
+    "should": ">= 1.2.2"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "engines": {
+    "node": ">= 0.6"
+  },
+  "main": "./lib/index"
+}
