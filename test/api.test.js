@@ -14,8 +14,8 @@ beforeEach(function(){
   g = new Gittip();
 });
 
-
 describe('Gittip API - Paydays', function () {
+  this.timeout(15000);
     it('responds with JSON', function (done) {
       request
         .get(g.defaults.paydaysURL)
@@ -31,6 +31,7 @@ describe('Gittip API - Paydays', function () {
 });
 
 describe('Gittip API - Stats', function () {
+  this.timeout(15000);
     it('responds with JSON', function (done) {
       request
         .get(g.defaults.statsURL)
@@ -46,6 +47,7 @@ describe('Gittip API - Stats', function () {
 });
 
 describe('Gittip API - User Public Data', function () {
+  this.timeout(15000);
     it('responds with JSON', function (done) {
       request
         .get('/kevintcoughlin/public.json')
