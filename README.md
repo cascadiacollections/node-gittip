@@ -1,6 +1,8 @@
-# Node-Gittip -- A Node.js library for Gittip's REST API
+# Node-Gittip [![Build Status](https://travis-ci.org/KevinTCoughlin/node-gittip.png?branch=master)](https://travis-ci.org/KevinTCoughlin/node-gittip)
 
-[![NPM](https://nodei.co/npm/node-gittip.png)](https://nodei.co/npm/node-gittip/)
+[![NPM](https://nodei.co/npm/gittip.png)](https://nodei.co/npm/gittip/)
+
+A Node.js library for Gittip's REST API
 
 ## Installation
 
