@@ -6,7 +6,7 @@
 var Gittip = require('..'),
     should = require('should');
 
-var g;
+var g = null;
 
 beforeEach(function(){
   g = new Gittip;
@@ -30,8 +30,6 @@ describe('g.get()', function() {
     var url = g.defaults.restBase + g.defaults.paydaysURL;
     g.get(url, null, function(data) {
       should.exist(data);
-      should.exist(data.results);
-      data.results.should.not.be.empty;
       done();
     });
   });
@@ -41,17 +39,12 @@ describe('g.getPaydays()', function () {
     it('should successfully complete request', function (done) {
       g.getPaydays(function(data) {
         should.exist(data);
-        data.results.should.not.be.empty;
         done();
       });
     });
     it('should successfully complete request with params', function (done) {
       g.getPaydays(function(data) {
         should.exist(data);
-        data.results.should.not.be.empty;
-        sampleResult = data.results[0];
-        should.exist(sampleResult.availableBikes);
-        should.not.exist(sampleResult.latitude);
         done();
       });
     });
@@ -61,7 +54,6 @@ describe('g.getStats()', function () {
     it('should successfully complete request', function (done) {
       g.getStats(function(data) {
         should.exist(data);
-        data.results.should.not.be.empty;
         done();
       });
     });
@@ -71,7 +63,6 @@ describe('g.getUser()', function () {
     it('should successfully complete request', function (done) {
       g.getUser({ name: 'kevintcoughlin' }, function(data) {
         should.exist(data);
-        data.results.should.not.be.empty;
         done();
       });
     });

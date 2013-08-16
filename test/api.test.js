@@ -23,9 +23,8 @@ describe('Gittip API - Paydays', function () {
         .expect(200)
         .end(function(err, res) {
           should.not.exist(err);
-          res.header['content-type'].should.eql('application/json; charset=utf8');
-          res.body.ok.should.eql(true);
-          res.body.results.should.not.be.empty;
+          res.header['content-type'].should.eql('application/json');
+          res.body.should.exit;
           done();
         });
     });
@@ -39,9 +38,8 @@ describe('Gittip API - Stats', function () {
         .expect(200)
         .end(function(err, res) {
           should.not.exist(err);
-          res.header['content-type'].should.eql('application/json; charset=utf8');
-          res.body.ok.should.eql(true);
-          res.body.results.should.not.be.empty;
+          res.header['content-type'].should.eql('application/json');
+          res.body.should.exit;
           done();
         });
     });
@@ -55,9 +53,8 @@ describe('Gittip API - User Public Data', function () {
         .expect(200)
         .end(function(err, res) {
           should.not.exist(err);
-          res.header['content-type'].should.eql('application/json; charset=utf8');
-          res.body.ok.should.eql(true);
-          res.body.results.should.not.be.empty;
+          res.header['content-type'].should.eql('application/json');
+          res.body.should.exit;
           done();
         });
     });
