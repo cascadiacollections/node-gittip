@@ -13,6 +13,7 @@ beforeEach(function(){
 });
 
 describe('g.get()', function() {
+  this.timeout(15000);
   it('should throw error if callback is not typeof function', function () {
     (function() {
       g.get(null, null, 'string');
@@ -36,6 +37,7 @@ describe('g.get()', function() {
 });
 
 describe('g.getPaydays()', function () {
+  this.timeout(15000);
     it('should successfully complete request', function (done) {
       g.getPaydays(function(data) {
         should.exist(data);
@@ -51,6 +53,7 @@ describe('g.getPaydays()', function () {
 });
 
 describe('g.getStats()', function () {
+  this.timeout(15000);
     it('should successfully complete request', function (done) {
       g.getStats(function(data) {
         should.exist(data);
@@ -60,6 +63,7 @@ describe('g.getStats()', function () {
 });
 
 describe('g.getUser()', function () {
+  this.timeout(15000);
     it('should successfully complete request', function (done) {
       g.getUser({ name: 'kevintcoughlin' }, function(data) {
         should.exist(data);
