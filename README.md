@@ -61,11 +61,11 @@ g.getUser({ name: 'KevinTCoughlin' }, function(data) {
 
 Issue the following Make command in the top directory to run the mocha.js test cases:
 
-  $ make test
+    $ make test
 
 Or...
 
-  $ npm test
+    $ npm test
 
 ## Contributing
 
