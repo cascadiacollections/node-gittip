@@ -2,7 +2,7 @@
 
 [![NPM](https://nodei.co/npm/gittip.png)](https://nodei.co/npm/gittip/)
 
-A Node.js library for Gittip's REST API
+A Node.js library for [Gittip](https://github.com/gittip)'s REST API
 
 ## Installation
 
