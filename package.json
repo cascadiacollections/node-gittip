@@ -1,23 +1,23 @@
 {
-  "name": "gittip",
-  "description": "Gittip API Client Library for Node.js",
-  "homepage": "https://github.com/KevinTCoughlin/node-gittip",
+  "name": "gratipay",
+  "description": "gratipay API Client Library for Node.js",
+  "homepage": "https://github.com/KevinTCoughlin/node-gratipay",
   "keywords": [
-    "gittip",
+    "gratipay",
     "git",
     "tip",
     "crown funding",
     "open source",
     "oss"
   ],
-  "version": "0.0.10",
+  "version": "0.1.0",
   "author": "Kevin Coughlin <kevintcoughlin@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:KevinTCoughlin/node-gittip.git"
+    "url": "git@github.com:KevinTCoughlin/node-gratipay.git"
   },
-  "bugs": "https://github.com/KevinTCoughlin/node-gittip/issues",
+  "bugs": "https://github.com/KevinTCoughlin/node-gratipay/issues",
   "scripts": {
     "test": "mocha"
   },

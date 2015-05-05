@@ -1,28 +1,28 @@
-# Node-Gittip [![Build Status](https://travis-ci.org/KevinTCoughlin/node-gittip.png?branch=master)](https://travis-ci.org/KevinTCoughlin/node-gittip)
+# Node-gratipay [![Build Status](https://travis-ci.org/KevinTCoughlin/node-gratipay.png?branch=master)](https://travis-ci.org/KevinTCoughlin/node-gratipay)
 
-[![NPM](https://nodei.co/npm/gittip.png)](https://nodei.co/npm/gittip/)
+[![NPM](https://nodei.co/npm/gratipay.png)](https://nodei.co/npm/gratipay/)
 
-A [Node.js](http://nodejs.org/) library for [Gittip](https://github.com/gittip)'s REST API
+A [Node.js](http://nodejs.org/) library for [gratipay](https://github.com/gratipay)'s REST API
 
 ## Installation
 
 Install using the node.js package manager [npm](http://npmjs.org/):
 
-    $ npm install gittip
+    $ npm install gratipay
     
 Or...
 
 Install via git clone:
 
-    $ git clone git://github.com/KevinTCoughlin/node-gittip.git
-    $ cd node-gittip
+    $ git clone git://github.com/KevinTCoughlin/node-gratipay.git
+    $ cd node-gratipay
     $ npm install
 
 ## Requirements
 
-You can install node-gittip and its dependencies with npm: 
+You can install node-gratipay and its dependencies with npm:
   
-    $ npm install gittip
+    $ npm install gratipay
 
 Dependencies
 
@@ -31,7 +31,7 @@ Dependencies
 
 ## Examples
 
-Demos of the gittip module are located in: [./examples](https://github.com/KevinTCoughlin/node-gittip/tree/master/examples)
+Demos of the gratipay module are located in: [./examples](https://github.com/KevinTCoughlin/node-gratipay/tree/master/examples)
 
 ## Usage
 
@@ -75,7 +75,7 @@ Feel free to contribute!
 
 ## License
 
-node-gittip: Copyright (c) 2013 Kevin Coughlin
+node-gratipay: Copyright (c) 2013 Kevin Coughlin
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
