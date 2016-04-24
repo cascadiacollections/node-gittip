@@ -1,6 +1,7 @@
-# Node-Gittip [![Build Status](https://travis-ci.org/KevinTCoughlin/node-gittip.png?branch=master)](https://travis-ci.org/KevinTCoughlin/node-gittip)
+# Node-Gittip
 
-[![NPM](https://nodei.co/npm/gittip.png)](https://nodei.co/npm/gittip/)
+[![Build Status](https://img.shields.io/travis/KevinTCoughlin/node-gittip.svg?style=flat-square)](https://travis-ci.org/KevinTCoughlin/node-gittip)
+[![npm version](https://img.shields.io/npm/v/gittip.svg?style=flat-square)](https://www.npmjs.com/package/gittip)
 
 A [Node.js](http://nodejs.org/) library for [Gittip](https://github.com/gittip)'s REST API
 
