@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Node-gittip by KevinTCoughlin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Node-gittip</h1>
+      <h2 class="project-tagline">A Node.js Library for Gittip&#39;s REST API</h2>
+      <a href="https://github.com/KevinTCoughlin/node-gittip" class="btn">View on GitHub</a>
+      <a href="https://github.com/KevinTCoughlin/node-gittip/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/KevinTCoughlin/node-gittip/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="node-gittip" class="anchor" href="#node-gittip" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Node-Gittip</h1>
+
+<p><a href="https://travis-ci.org/KevinTCoughlin/node-gittip"><img src="https://img.shields.io/travis/KevinTCoughlin/node-gittip.svg?style=flat-square" alt="Build Status"></a>
+<a href="https://www.npmjs.com/package/gittip"><img src="https://img.shields.io/npm/v/gittip.svg?style=flat-square" alt="npm version"></a></p>
+
+<p>A <a href="http://nodejs.org/">Node.js</a> library for <a href="https://github.com/gittip">Gittip</a>'s REST API</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Install using the node.js package manager <a href="http://npmjs.org/">npm</a>:</p>
+
+<pre><code>$ npm install gittip
+</code></pre>
+
+<p>Or...</p>
+
+<p>Install via git clone:</p>
+
+<pre><code>$ git clone git://github.com/KevinTCoughlin/node-gittip.git
+$ cd node-gittip
+$ npm install
+</code></pre>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>You can install node-gittip and its dependencies with npm: </p>
+
+<pre><code>$ npm install gittip
+</code></pre>
+
+<p>Dependencies</p>
+
+<ul>
+<li>
+<a href="http://nodejs.org/">Node.js</a> v0.6 +</li>
+<li>
+<a href="https://github.com/mikeal/request">Request</a> v2.x.x</li>
+</ul>
+
+<h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Examples</h2>
+
+<p>Demos of the gittip module are located in: <a href="https://github.com/KevinTCoughlin/node-gittip/tree/master/examples">./examples</a></p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<ul>
+<li><strong>.getPaydays(callback)</strong></li>
+</ul>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">g</span>.<span class="pl-en">getPaydays</span>(<span class="pl-k">function</span>(<span class="pl-smi">data</span>) {
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(data);
+});</pre></div>
+
+<ul>
+<li><strong>.getStats(callback)</strong></li>
+</ul>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">g</span>.<span class="pl-en">getStats</span>(<span class="pl-k">function</span>(<span class="pl-smi">data</span>) {
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(data);
+});</pre></div>
+
+<ul>
+<li><strong>.getUser(options, callback)</strong></li>
+</ul>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">g</span>.<span class="pl-en">getUser</span>({ name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>KevinTCoughlin<span class="pl-pds">'</span></span> }, <span class="pl-k">function</span>(<span class="pl-smi">data</span>) {
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(data);
+});</pre></div>
+
+<h2>
+<a id="testing" class="anchor" href="#testing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Testing</h2>
+
+<p>Issue the following Make command in the top directory to run the mocha.js test cases:</p>
+
+<pre><code>$ make test
+</code></pre>
+
+<p>Or...</p>
+
+<pre><code>$ npm test
+</code></pre>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>Feel free to contribute!</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>node-gittip: Copyright (c) 2013-2016 Kevin Coughlin</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/KevinTCoughlin/node-gittip">Node-gittip</a> is maintained by <a href="https://github.com/KevinTCoughlin">KevinTCoughlin</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
