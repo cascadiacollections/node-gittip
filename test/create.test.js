@@ -19,8 +19,7 @@ describe('Create gittip client', function () {
 	            'User-Agent': 'node-gittip/'
 	        },
           restBase:              'https://gratipay.com/',
-          paydaysURL:            'about/paydays.json',
-          statsURL:              'about/stats.json'
+          paydaysURL:            'about/paydays.json'
 		};
 
         var g = new Gittip();
@@ -31,7 +30,6 @@ describe('Create gittip client', function () {
 		var g = new Gittip();
 		g.defaults.restBase.should.equal('https://gratipay.com/');
 		g.defaults.paydaysURL.should.equal('about/paydays.json');
-		g.defaults.statsURL.should.equal('about/stats.json');
     });
   });
 });
