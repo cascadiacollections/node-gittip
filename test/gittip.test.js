@@ -1,7 +1,7 @@
-/** 
+/**
  * Tests for HTTP GET requests
  * Test Framework: Mocha (http://visionmedia.github.io/mocha/)
- * Assertions: Should (https://github.com/visionmedia/should.js/) 
+ * Assertions: Should (https://github.com/visionmedia/should.js/)
  */
 var Gittip = require('..'),
     should = require('should');
@@ -46,16 +46,6 @@ describe('g.getPaydays()', function () {
     });
     it('should successfully complete request with params', function (done) {
       g.getPaydays(function(data) {
-        should.exist(data);
-        done();
-      });
-    });
-});
-
-describe('g.getStats()', function () {
-  this.timeout(15000);
-    it('should successfully complete request', function (done) {
-      g.getStats(function(data) {
         should.exist(data);
         done();
       });
