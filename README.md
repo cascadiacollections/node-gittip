@@ -76,7 +76,7 @@ Feel free to contribute!
 
 ## License
 
-node-gittip: Copyright (c) 2013 Kevin Coughlin
+node-gittip: Copyright (c) 2013-2016 Kevin Coughlin
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
