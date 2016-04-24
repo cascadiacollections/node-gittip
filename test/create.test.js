@@ -1,7 +1,7 @@
-/** 
+/**
  * Tests for Gittip client creation
  * Test Framework: Mocha (http://visionmedia.github.io/mocha/)
- * Assertions: Should (https://github.com/visionmedia/should.js/) 
+ * Assertions: Should (https://github.com/visionmedia/should.js/)
  */
 var Gittip = require('..')
   , utils = require('../lib/utils')
@@ -18,9 +18,9 @@ describe('Create gittip client', function () {
 	            'Connection': 'close',
 	            'User-Agent': 'node-gittip/'
 	        },
-	        restBase:              'https://www.gittip.com/',
-	        paydaysURL:            'about/paydays.json',
-	        statsURL:              'about/stats.json'
+          restBase:              'https://gratipay.com/',
+          paydaysURL:            'about/paydays.json',
+          statsURL:              'about/stats.json'
 		};
 
         var g = new Gittip();
@@ -29,7 +29,7 @@ describe('Create gittip client', function () {
 
     it('should have correct API endpoints as defaults', function () {
 		var g = new Gittip();
-		g.defaults.restBase.should.equal('https://www.gittip.com/');
+		g.defaults.restBase.should.equal('https://gratipay.com/');
 		g.defaults.paydaysURL.should.equal('about/paydays.json');
 		g.defaults.statsURL.should.equal('about/stats.json');
     });
